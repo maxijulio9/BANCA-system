@@ -23,7 +23,7 @@ public class CreateNewAccountUseCase implements ICreateAccountCustomer {
             throw new RuntimeException("El saldo no puede ser menor  a 1000 USDT");
         }
 
-        return new AccountCustomer.getInstance(name, email, age, budget);
+        return  AccountCustomer.getInstance(name, email, age, budget);
 
     }
     
